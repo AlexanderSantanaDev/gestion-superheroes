@@ -1,0 +1,56 @@
+<div *ngIf="loading" class="center-loading">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>
+
+<div *ngIf="!loading">
+    <div class="custom-filter-btn">
+        <mat-form-field class="custom-input">
+            <input matInput [(ngModel)]="filterValue" title="Filtra héroes por nombre" (input)="filterHeroes()"
+                placeholder="Filtrar héroes...">
+        </mat-form-field>
+        <button mat-raised-button style="background-color: #ffc8c8;" title="Nuevo" routerLink="/heroes/new">Nuevo
+            Héroe</button>
+    </div>
+
+    <ng-container *ngIf="pagedHeroes.length > 0; else noResults">
+        <mat-card *ngFor="let hero of pagedHeroes" [ngClass]="{'large-screen': isLargeScreen}">
+            <mat-card-header class="header">
+                <mat-card-title>{{ filterValue ? (hero.name | capitalize) : hero.name }} | <span
+                        style="font-family: cursive;">{{hero.universe}}</span></mat-card-title>
+                <div class="actions">
+                    <button mat-mini-fab title="Editar" [routerLink]="['/heroes', hero.id]">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-mini-fab color="warn" title="Eliminar" aria-label="Eliminar"
+                        (click)="deleteHero(hero.id)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </div>
+            </mat-card-header>
+            <mat-card-content>
+                <!-- Mostrar la imagen del héroe si existe, de lo contrario mostrar la imagen predeterminada -->
+                <img *ngIf="hero.imgUrl; else defaultImage" [src]="hero.imgUrl" alt="{{hero.name}}"
+                    title="{{hero.name}}" draggable="false" />
+                <ng-template #defaultImage>
+                    <img src="assets/images/super-heroes.webp" alt="Hero image" draggable="false" />
+                </ng-template>
+                <p>Superpoder: {{ hero.superPower }}</p>
+            </mat-card-content>
+        </mat-card>
+        <mat-paginator [length]="totalHeroesCount" [pageSize]="6" [pageSizeOptions]="[6, 12, 24]" showFirstLastButtons
+            (page)="onPageChange($event)" [pageIndex]="0">
+        </mat-paginator>
+    </ng-container>
+
+    <!-- Template que se muestra si no se han encntrado ningun resultado cuandos e filtra por nombre de heroe -->
+    <ng-template #noResults>
+        <mat-card style="display: flex; align-items: center;">
+            <mat-card-header class="header">
+                <mat-card-title>No se han encontrado héroes</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>No hay héroes que coincidan con los criterios de búsqueda.</p>
+            </mat-card-content>
+        </mat-card>
+    </ng-template>
+</div>

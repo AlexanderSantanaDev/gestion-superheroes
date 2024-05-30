@@ -1,0 +1,36 @@
+.hero-title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hero-title a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: rgb(40, 6, 6);
+  font-size: 3em;
+  letter-spacing: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden; 
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Efecto de sombra para mayor profundidad */
+  transition: transform 0.3s ease; /* Transición suave para el efecto de pulsación */
+}
+
+.hero-title a:hover {
+  transform: scale(1); /* Restablecer la escala al pasar el cursor */
+  animation: pulsar 0.3s linear infinite;
+}
+
+
+@keyframes pulsar {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

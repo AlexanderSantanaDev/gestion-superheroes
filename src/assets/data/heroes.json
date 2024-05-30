@@ -1,0 +1,186 @@
+[
+    {
+        "id": 1,
+        "name": "Iron Man",
+        "power": "Super fuerza",
+        "universe": "Marvel",
+        "superPower": "Manipulación molecular",
+        "imgUrl": "https://hips.hearstapps.com/hmg-prod/images/iron-man-vivo-1570783601.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Captain America",
+        "power": "Invulnerabilidad",
+        "universe": "Marvel",
+        "superPower": "Viaje en el tiempo",
+        "imgUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2014/11/406746-cine-superheroes-critica-capitan-america-primer-vengador.jpg?tf=3840x"
+    },
+    {
+        "id": 3,
+        "name": "Thor",
+        "power": "Vuelo",
+        "universe": "Marvel",
+        "superPower": "Control mental",
+        "imgUrl": "https://i.pinimg.com/736x/09/62/a4/0962a412cd5df4bf2e0c9b2852ea948f.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Hulk",
+        "power": "Super velocidad",
+        "universe": "Marvel",
+        "superPower": "Invisibilidad",
+        "imgUrl": "https://www.mundodeportivo.com/alfabeta/hero/2023/03/image-2023-03-23t103742.872.jpg?width=1200&aspect_ratio=16:9"
+    },
+    {
+        "id": 5,
+        "name": "Black Widow",
+        "power": "Inteligencia",
+        "universe": "Marvel",
+        "superPower": "Teletransportación",
+        "imgUrl": "https://i0.wp.com/www.tomosygrapas.com/wp-content/uploads/2018/01/4a37af90-daf5-0132-cecc-0e01949ad350.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Spider-Man",
+        "power": "Sentidos arácnidos",
+        "universe": "Marvel",
+        "superPower": "Cambio de tamaño",
+        "imgUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/0714/Cu9fyu6DM41JPekXLf1neF9r.png"
+    },
+    {
+        "id": 7,
+        "name": "Wolverine",
+        "power": "Regeneración",
+        "universe": "Marvel",
+        "superPower": "Curación instantánea",
+        "imgUrl": "https://sm.ign.com/t/ign_latam/screenshot/default/wolverine-comics_twr4.1280.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Cyclops",
+        "power": "Manipulación del clima",
+        "universe": "X-Men",
+        "superPower": "Absorción de energía",
+        "imgUrl": "https://media.gq.com/photos/66049ca2d6bafed5ec9b791f/4:3/w_2328,h_1746,c_limit/AAM0370_comp_Tk2_v001_r709.117420_C.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Storm",
+        "power": "Telepatía",
+        "universe": "X-Men",
+        "superPower": "Proyección de energía",
+        "imgUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFImfF-355aPayUkYCof0u_gNDLJb_t1N-DPJGjLFWaP3NilGV6UxvvewW_WbdEldlnmKJPlugPuWKMFs0wXOs-gEUjVbvDz6b9z5r6iyxYOW5zgxdg5Sk02WJ2gpFIP2Jo6IRBHj5iR0g/s1600/016.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Professor X",
+        "power": "Curación",
+        "universe": "X-Men",
+        "superPower": "Control del clima extremo",
+        "imgUrl": "https://www.comicvine.com/a/uploads/original/11/113509/7305073-ua%20xavier.png"
+    },
+    {
+        "id": 11,
+        "name": "Green Lantern",
+        "power": "Constructos de energía",
+        "universe": "DC Comics",
+        "superPower": "Creación de portales dimensionales",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/en/9/90/Green_Lantern_%28Hal_Jordan%29.png"
+    },
+    {
+        "id": 12,
+        "name": "Flash",
+        "power": "Velocidad sobrehumana",
+        "universe": "DC Comics",
+        "superPower": "Manipulación de la realidad",
+        "imgUrl": "https://i.blogs.es/c883f0/the-flash-hbo-max-mexico/500_333.jpeg"
+    },
+    {
+        "id": 13,
+        "name": "Aquaman",
+        "power": "Habilidades acuáticas",
+        "universe": "DC Comics",
+        "superPower": "Control de animales",
+        "imgUrl": "https://i.blogs.es/12a5f3/aquaman-image2/1366_2000.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Wonder Woman",
+        "power": "Fuerza y vuelo",
+        "universe": "DC Comics",
+        "superPower": "Telequinesis",
+        "imgUrl": "https://www.mundodeportivo.com/alfabeta/hero/2023/11/wonder-woman.1698964414.6042.jpg?width=1200"
+      },
+      {
+        "id": 15,
+        "name": "Superman",
+        "power": "Visión de rayos X",
+        "universe": "DC Comics",
+        "superPower": "Telepatía avanzada",
+        "imgUrl": "https://www.cinemascomics.com/wp-content/uploads/2021/06/Superman.jpg"
+      },
+      {
+        "id": 16,
+        "name": "Batman",
+        "power": "Fuerza descomunal",
+        "universe": "DC Comics",
+        "superPower": "Control del tiempo",
+        "imgUrl": "https://img.rtve.es/imagenes/batman-actores-cine-saber-ganar/1634549481092.jpg"
+      },
+      {
+        "id": 17,
+        "name": "Robin",
+        "power": "Habilidades acrobáticas",
+        "universe": "DC Comics",
+        "superPower": "Viaje intergaláctico",
+        "imgUrl": "https://media.revistagq.com/photos/625d21fb2a45a743c11f080c/16:9/w_1280,c_limit/ZFOEOAU3YZHBFDWFWKSX3T7VJM.jpg"
+      },
+      {
+        "id": 18,
+        "name": "Catwoman",
+        "power": "Lucha mano a mano",
+        "universe": "DC Comics",
+        "superPower": "Manipulación de la materia oscura",
+        "imgUrl": "https://i.redd.it/j0hxbvky4e431.jpg"
+      },
+      {
+        "id": 19,
+        "name": "Batgirl",
+        "power": "Armas y gadgets",
+        "universe": "DC Comics",
+        "superPower": "Inmortalidad",
+        "imgUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8359efd9-fa97-4919-8f02-3712e70a0eeb/dg4mk3v-4142d623-2e78-4dcb-8a22-229961d5394b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgzNTllZmQ5LWZhOTctNDkxOS04ZjAyLTM3MTJlNzBhMGVlYlwvZGc0bWszdi00MTQyZDYyMy0yZTc4LTRkY2ItOGEyMi0yMjk5NjFkNTM5NGIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.a_mIOA4XUJijWudaR63lpJbYvg89qp26W1kfo0lVzqc"
+      },
+      {
+        "id": 20,
+        "name": "Nightwing",
+        "power": "Habilidades acrobáticas",
+        "universe": "DC Comics",
+        "superPower": "Manipulación molecular",
+        "imgUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/02/nightwing-quien-es-heroe-nueva-pelicula-warner-dc.jpg?tf=1200x900"
+      },
+      {
+        "id": 21,
+        "name": "Star-Lord",
+        "power": "Habilidades cósmicas",
+        "universe": "Marvel",
+        "superPower": "Viaje en el tiempo",
+        "imgUrl": "https://pm1.aminoapps.com/6824/dc681b03a13adf272daba02f84db1b7994475096v2_00.jpg"
+      },
+      {
+        "id": 22,
+        "name": "Gamora",
+        "power": "Habilidades de combate",
+        "universe": "Marvel",
+        "superPower": "Control mental",
+        "imgUrl": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/11/Guardianes-de-la-Galaxia-3-Zoe-Saldana-quisiera-una-historia.jpg?fit=1920%2C1080&quality=50&strip=all&ssl=1"
+      },
+      {
+        "id": 23,
+        "name": "Groot",
+        "power": "Fuerza vegetal",
+        "universe": "Marvel",
+        "superPower": "Invisibilidad",
+        "imgUrl": "https://i.pinimg.com/736x/81/c4/bc/81c4bc6085a7d6e112af306d283e6524.jpg"
+      }
+]

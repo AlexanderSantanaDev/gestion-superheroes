@@ -1,0 +1,49 @@
+<div *ngIf="loading" class="center-loading">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>
+
+<mat-card *ngIf="!loading">
+  <mat-card-header>
+    <mat-card-title>
+      {{ isNew ? 'Agregar Nuevo Héroe' : 'Editar Héroe |' }} {{ isNew ? '' : hero.name }}
+    </mat-card-title>
+    <!-- Añadir la imagen del héroe en el encabezado si existe, si no, mostramos una por defecto -->
+    <img *ngIf="hero.imgUrl; else defaultImage" [src]="hero.imgUrl" alt="{{hero.name}}" title="{{hero.name}}"
+      style="margin-left: auto; margin-bottom: 10px ;" draggable="false" />
+    <ng-template #defaultImage>
+      <img src="assets/images/super-heroes.webp" alt="Hero image" style="margin-left: auto; margin-bottom: 10px ;"
+        draggable="false" />
+    </ng-template>
+  </mat-card-header>
+  <mat-card-content>
+    <form (ngSubmit)="saveHero()" #heroForm="ngForm">
+      <mat-form-field class="full-width">
+        <mat-label>Nombre del Héroe</mat-label>
+        <input matInput [(ngModel)]="hero.name" name="name" required #name="ngModel">
+        <mat-error *ngIf="name.invalid && name.touched">Nombre es requerido</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Universo</mat-label>
+        <input matInput [(ngModel)]="hero.universe" name="universe" required #universe="ngModel">
+        <mat-error *ngIf="universe.invalid && universe.touched">Universo es requerido</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Superpoder</mat-label>
+        <input matInput [(ngModel)]="hero.superPower" name="superPower" required #superPower="ngModel">
+        <mat-error *ngIf="superPower.invalid && superPower.touched">Superpoder es requerido</mat-error>
+      </mat-form-field>
+
+      <!-- Campo imgUrl solo visible si no es un nuevo héroe -->
+      <div *ngIf="!isNew">
+        <mat-form-field class="full-width">
+          <mat-label>Poder</mat-label>
+          <input matInput [(ngModel)]="hero.power" name="power" disabled>
+        </mat-form-field>
+      </div>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="!heroForm.form.valid">Guardar</button>
+    </form>
+  </mat-card-content>
+</mat-card>

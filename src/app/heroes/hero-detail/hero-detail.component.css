@@ -1,0 +1,84 @@
+:host ::ng-deep.center-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+.full-width {
+    width: 100%;
+}
+mat-card {
+    background-color: #ffc8c8;
+}
+
+
+mat-card {
+    width: 1000px;
+    margin: 50px;
+}
+mat-card-header {
+    align-items: center;
+}
+
+mat-card-image {
+    border-radius: 50%;
+}
+img {
+    border-radius: 50%;
+    clip-path: circle();
+    max-width: 10%;
+    height: auto;
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+mat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    overflow: hidden;
+    background-color: red;
+}
+
+/* media querys  */
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+    mat-card {
+        width: 1000px;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    mat-card {
+        width: 600px;
+    }
+
+    img {
+        width: 80px;
+        max-width: unset;
+    }
+}
+
+/* Estilos para pantallas pequeñas y extra pequeñas */
+@media (max-width: 767px) {
+    mat-card {
+        width: 80%;
+    }
+
+    img {
+        max-width: unset;
+    }
+}
