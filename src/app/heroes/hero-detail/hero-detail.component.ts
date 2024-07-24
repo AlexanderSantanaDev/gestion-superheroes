@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HeroService, Hero } from '../hero.service';
 
-import { MatSnackBar } from '@angular/material/snack-bar'; 
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 /**********************************************************************************************************************/
 @Component({
@@ -23,8 +23,8 @@ export class HeroDetailComponent implements OnInit {
     private router: Router,
     private snackBar: MatSnackBar
   ) { }
-  
-  
+
+
   /**********************************************************************************************************************/
   // Implementamos el ciclo de vida OnInit para cargar los detalles del héroe existente si se proporciona un id en la URL. 
   /** ngOnInit:   
