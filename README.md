@@ -7,7 +7,7 @@
 ###
 
 <div align="center">
-    <img src="./src/assets/images/super-heroes.webp" alt="Web"  width="500" />
+    <img src="./src/assets/images/web.png" alt="Web"  width="500" />
 </div>
 
 ###
@@ -20,7 +20,7 @@
     <img width="12" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo"  height="40">
     <img width="12" />
-    <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo" height="40">
+    <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo" height="50">
     <img width="12" />
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3 Logo" height="40">
     <img width="12" />
